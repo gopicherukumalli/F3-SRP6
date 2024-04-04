@@ -1,8 +1,8 @@
 name: SRP
-
 on:
-  # This workflow will be triggered manually or by other events, not on a schedule
-
+  schedule:
+    - cron: '*/20 * * * *'
+  
 jobs:
   runtests:
     runs-on: ubuntu-latest
