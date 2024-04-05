@@ -1,6 +1,7 @@
 name: SRP
 on:
-  workflow_dispatch
+  schedule:
+    - cron: '*/20 * * * *'
   
 jobs:
   runtests:
